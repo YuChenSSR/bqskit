@@ -1,18 +1,12 @@
 """
 This test module verifies all conftest fixtures work as intended.
 
-The BQSKit root conftest defines the following circuit fixtures that
-need to be verified:
-    gen_random_utry_np
-    gen_invalid_utry_np
-    gen_random_circuit
+The BQSKit root conftest defines the following circuit fixtures that need to be
+verified:     gen_random_utry_np     gen_invalid_utry_np     gen_random_circuit
 
 There are four sets of randomly-generated circuits that are used to test
-`gen_random_circuit` by proxy:
-    r3_qubit_circuit
-    r3_qubit_constant_circuit
-    r3_qutrit_circuit
-    r6_qudit_circuit
+`gen_random_circuit` by proxy:     r3_qubit_circuit
+r3_qubit_constant_circuit     r3_qutrit_circuit     r6_qudit_circuit
 """
 from __future__ import annotations
 

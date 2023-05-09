@@ -21,13 +21,11 @@ class FourParamGenerator(LayerGenerator):
     """
     The FourParamGenerator class.
 
-    This is an optimized layer generator that uses commutativity rules
-    to reduce the number of parameters per block. This also fixes the
-    gate set to use cnots, ry, rz, and u3 gates. This is based on the
-    following equivalences:
+    This is an optimized layer generator that uses commutativity rules to reduce
+    the number of parameters per block. This also fixes the gate set to use
+    cnots, ry, rz, and u3 gates. This is based on the following equivalences:
 
-    U--C--U   U--C--Rz--Ry--Rz   U--C--Ry--Rz
-       |    ~    |             ~    |
+    U--C--U   U--C--Rz--Ry--Rz   U--C--Ry--Rz    |    ~    |             ~    |
     U--X--U   U--X--Rx--Ry--Rx   U--X--Ry--Rx
     """
 
